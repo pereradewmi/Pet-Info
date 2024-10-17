@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/pink_color" />
+    <corners android:radius="16dp"/> <!-- Rounded corners -->
+    <padding android:left="12dp" android:top="12dp" android:right="12dp" android:bottom="12dp"/> <!-- Padding -->
+<!--    <elevation android:toZ="4dp"/> &lt;!&ndash; Shadow effect &ndash;&gt;-->
+</shape>
