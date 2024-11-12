@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Registration">
 
     <!-- Background Image -->
     <ImageView
@@ -31,37 +31,48 @@
 
         <TextView
             android:id="@+id/mainText"
-            android:layout_width="268dp"
-            android:layout_height="wrap_content"
+            android:layout_width="251dp"
+            android:layout_height="78dp"
             android:layout_marginLeft="90dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_marginRight="90dp"
             android:fontFamily="@font/adlam_display"
             android:text="Paw Pedicab"
             android:textAlignment="center"
-            android:textColor="#7B5D28 "
-            android:textSize="34sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.682"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/Cview2"
-            android:layout_width="338dp"
-            android:layout_height="162dp"
-            android:layout_marginTop="45dp"
-            android:src="@drawable/imglogin" />
+            android:textColor="#7B5D28"
+            android:textSize="34sp" />
 
         <EditText
-            android:id="@+id/editUsername"
+            android:id="@+id/editFullname"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="text"
+            android:hint="Name"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editUsercnum"
             android:layout_width="match_parent"
             android:layout_height="61dp"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:inputType="text"
-            android:hint="User Name"
+            android:inputType="number"
+            android:hint="Contact Number"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editUseremail"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
             android:textSize="20sp" />
 
         <EditText
@@ -75,17 +86,24 @@
             android:hint="Password"
             android:textSize="20sp" />
 
+        <CheckBox
+            android:id="@+id/checkBTnC"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:text="I Agree to the Terms and Conditions" />
+
         <Button
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_register"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:layout_marginTop="75dp"
+            android:layout_marginTop="45dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:backgroundTint="#D8790D"
-            android:text="Login"
+            android:text="Register"
             android:textSize="24sp" />
-
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
@@ -96,14 +114,14 @@
             android:text="OR" />
 
         <Button
-            android:id="@+id/btn_register"
+            android:id="@+id/btn_loginR"
             android:layout_width="match_parent"
             android:layout_height="49dp"
             android:layout_marginTop="5dp"
             android:backgroundTint="#00F2F4F4"
-            android:text="Register Here !"
+            android:text="Login Here !"
             android:textColor="#090909"
             android:textSize="20sp" />
-    </LinearLayout>
 
+    </LinearLayout>
 </FrameLayout>
