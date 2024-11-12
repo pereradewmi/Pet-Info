@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "390783784159",
+    "project_id": "petinfoapp-378a3",
+    "storage_bucket": "petinfoapp-378a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390783784159:android:cbb96412bd0ba02ceac56a",
+        "android_client_info": {
+          "package_name": "com.petinfoApp.petinfo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx5daE4DYYTArx74wvvR87VyHFjP35jfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

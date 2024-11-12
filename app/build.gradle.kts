@@ -1,14 +1,15 @@
 plugins {
     alias(libs.plugins.android.application)
+    id("com.google.gms.google-services")
 }
 
 android {
-    namespace = "com.petinfo.assignment01_petinfo"
+    namespace = "com.petinfoApp.petinfo"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.petinfo.assignment01_petinfo"
-        minSdk = 24
+        applicationId = "com.petinfoApp.petinfo"
+        minSdk = 28
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -37,7 +38,11 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.car.ui.lib)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+    implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
+    implementation("com.google.firebase:firebase-analytics")
 }

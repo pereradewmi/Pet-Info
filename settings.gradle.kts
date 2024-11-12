@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Assignment01-PetInfo"
+rootProject.name = "PetInfo"
 include(":app")
+ 
