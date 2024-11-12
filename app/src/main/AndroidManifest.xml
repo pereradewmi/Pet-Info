@@ -25,13 +25,13 @@
             android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".CategeryNew"
             android:exported="false" />
         <activity
             android:name=".Registration"
             android:exported="false" />
         <activity
-            android:name=".CategeryNew"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
