@@ -11,6 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.petinfoApp.petinfo.R;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -33,13 +35,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button btn2 = findViewById(R.id.button2);
-        btn2.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent intent= new Intent(MainActivity.this, NewRegister.class);
-                startActivity(intent);
-            }
-        });
+//        Button btn2 = findViewById(R.id.button2);
+//        btn2.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View view){
+//                Intent intent= new Intent(MainActivity.this, NewRegister.class);
+//                startActivity(intent);
+//            }
+//        });
     }
 }
