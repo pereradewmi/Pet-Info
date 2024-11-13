@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    tools:context=".PetDeatails"
+    android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Back Button -->
+
+            <!-- Title -->
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D8790D"
+                android:text="Back"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/breedTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="German Shepherd"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"/>
+
+            <!-- Main Image -->
+            <ImageView
+                android:id="@+id/mainImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/germanshepherd" />
+
+            <!-- Round Profile Image with Information -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/germanshepherd"
+                    android:background="@drawable/germanshepherd" />
+
+                <TextView
+                    android:id="@+id/breedDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Normal Height : 60-65 cm\nNormal weight : 30-40 kg\nNormal width : 70-86 cm"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <!-- Description Section -->
+            <TextView
+                android:id="@+id/descriptionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Description"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Intelligent, confident, and courageous. Often used as working dogs in police and military roles."
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+            <!-- Button Group -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/lifetimeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFD3A7"
+                    android:text="Life Time"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/mealPlanButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="#FFD3A7"
+                    android:text="Meal Plan"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/vitaminsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="#FFD3A7"
+                    android:text="Vitamins"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <!-- Meal Plan Title -->
+            <TextView
+                android:id="@+id/mealPlanTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Meal Plan"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:id="@+id/mealPlanText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Intelligent, confident, and courageous. Often used as working dogs in police and military roles."
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+            <!-- Image Carousel -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/germanshepherd" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/germanshepherd" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/germanshepherd" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Comment Section -->
+            <TextView
+                android:id="@+id/shareThoughtsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Share Your Thoughts !"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium" />
+
+            <EditText
+                android:id="@+id/commentsEditText"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#FFD3A7"
+                android:hint="Comments"
+                android:textColor="#000000"
+                android:textColorHint="#888888"
+                android:gravity="top"
+                android:padding="8dp" />
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/Csubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#D8790D"
+                android:text="Submit"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </ScrollView>
+

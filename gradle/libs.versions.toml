@@ -8,6 +8,7 @@ material = "1.12.0"
 activity = "1.9.3"
 constraintlayout = "2.1.4"
 carUiLib = "2.6.0"
+firebaseInappmessaging = "21.0.1"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -18,6 +19,7 @@ material = { group = "com.google.android.material", name = "material", version.r
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 car-ui-lib = { group = "com.android.car.ui", name = "car-ui-lib", version.ref = "carUiLib" }
+firebase-inappmessaging = { group = "com.google.firebase", name = "firebase-inappmessaging", version.ref = "firebaseInappmessaging" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

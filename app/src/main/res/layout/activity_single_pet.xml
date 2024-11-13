@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="5dp"
+    tools:context=".SinglePet">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            tools:ignore="MissingConstraints">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/breedTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="German Shepherd"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:fontFamily="@font/adlam_display"
+                android:gravity="center"/>
+
+            <!-- Main Image -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/carouselImage"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal" />
+
+            <!-- Round Profile Image with Information -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/germanshepherd"
+                    android:background="@drawable/germanshepherd" />
+
+                <TextView
+                    android:id="@+id/breedDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Normal Height : 60-65 cm\nNormal weight : 30-40 kg\nNormal width : 70-86 cm"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp" />
+            </LinearLayout>
+
+            <!-- Description Section -->
+            <TextView
+                android:id="@+id/descriptionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="Description"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/adlam_display"/>
+
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Intelligent, confident, and courageous. Often used as working dogs in police and military roles."
+                android:textColor="#555555"
+                android:textSize="18sp" />
+
+            <!-- Button Group -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/lifetimeButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFD3A7"
+                    android:layout_marginEnd="8dp"
+                    android:text="Life Time"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/mealPlanButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFD3A7"
+                    android:layout_marginEnd="8dp"
+                    android:text="Meals"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/vitaminsButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFD3A7"
+                    android:text="Vitamins"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <!-- Meal Plan Title -->
+<!--            <TextView-->
+<!--                android:id="@+id/mealPlanTitle"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="34dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:text="Meal Plan"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="18sp"-->
+<!--                android:fontFamily="@font/adlam_display"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/mealPlanText"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:text="The best food to feed a German Shepherd is one that is rich in protein and fat content. Since German Shepherds are known for their high energy levels, they need to be fed food that can help them maintain their energy levels. German Shepherds should be fed chicken, beef, turkey, lamb, salmon, and rabbit."-->
+<!--                android:textColor="#555555"-->
+<!--                android:textSize="18sp" />-->
+
+<!--        -->
+<!--            <HorizontalScrollView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:scrollbars="none">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="120dp"-->
+<!--                        android:layout_height="120dp"-->
+<!--                        android:layout_marginEnd="8dp"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/meal1" />-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="120dp"-->
+<!--                        android:layout_height="120dp"-->
+<!--                        android:layout_marginEnd="8dp"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/meal2" />-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="120dp"-->
+<!--                        android:layout_height="120dp"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/meal3" />-->
+<!--                </LinearLayout>-->
+<!--            </HorizontalScrollView>-->
+            <!-- Meal Plan Section -->
+            <LinearLayout
+                android:id="@+id/mealPlanSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"> <!-- Visible by default -->
+
+                <!-- Meal Plan Title and Text as before -->
+                <TextView
+                    android:id="@+id/mealPlanTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Meal Plan"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/adlam_display"/>
+
+                <TextView
+                    android:id="@+id/mealPlanText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="The best food to feed a German Shepherd is one that is rich in protein and fat content..."
+                    android:textColor="#555555"
+                    android:textSize="18sp" />
+
+                <!-- Image Carousel as before -->
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/meal1" />
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginEnd="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/meal2" />
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/meal3" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <!-- Lifetime Section -->
+            <LinearLayout
+                android:id="@+id/lifetimeSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Life Span Information"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/adlam_display"/>
+                <TextView
+                    android:id="@+id/lifeSpanText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="The average lifespan of a German Shepherd is typically 9 to 13 years. Several factors can influence their lifespan, including genetics, diet, exercise, and healthcare"
+                    android:textColor="#555555"
+                    android:textSize="18sp" />
+                <!-- Image Carousel as before -->
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginEnd="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/lifetime" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <!-- Vitamins Section -->
+            <LinearLayout
+                android:id="@+id/vitaminsSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Vitamins"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/adlam_display"/>
+                <TextView
+                    android:id="@+id/vitaminText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="Among essential vitamins for dogs are vitamins A, B, C, D, E, and K"
+                    android:textColor="#555555"
+                    android:textSize="18sp" />
+
+                <!-- Image Carousel as before -->
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginEnd="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/vitamin1" />
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginEnd="8dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/vitamin2" />
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/vitamin3" />
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/vitamin1" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+
+            <!-- Comment Section -->
+            <TextView
+                android:id="@+id/shareThoughtsTitle"
+                android:layout_width="194dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="54dp"
+                android:fontFamily="@font/adlam_display"
+                android:textAlignment="center"
+                android:text="Share Your Thoughts !"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <!-- Submit Button -->
+            <EditText
+                android:id="@+id/commentsEditText"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:gravity="top"
+                android:background="@drawable/edittext_shadow"
+                android:hint="Comments"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#888888" />
+
+            <Button
+                android:id="@+id/Csubmit"
+                android:layout_width="188dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#D8790D"
+                android:text="Submit"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
