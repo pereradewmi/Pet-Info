@@ -13,6 +13,9 @@
         android:theme="@style/Theme.PetInfo"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".PetDeatails"
             android:exported="false" />
         <activity
@@ -31,13 +34,13 @@
             android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".CategeryNew"
             android:exported="false" />
         <activity
             android:name=".Registration"
             android:exported="false" />
         <activity
-            android:name=".CategeryNew"
+            android:name=".FNQ"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

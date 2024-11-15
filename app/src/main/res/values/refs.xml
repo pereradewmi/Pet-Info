@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="car_ui_recyclerview_ic_down" />
+    <drawable name="car_ui_recyclerview_ic_up" />
+</resources>
