@@ -90,35 +90,9 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp">
-
             <!-- Card 1 -->
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:orientation="horizontal"
-                android:backgroundTint="#FFEACC"
-                android:padding="16dp"
-                android:background="@drawable/card_background">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="110dp"
-                    android:layout_height="110dp"
-                    android:layout_marginEnd="16dp"
-                    android:src="@drawable/caretip" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Ensure your pet get a Proper Nutrition"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <!-- Card 2 -->
-            <LinearLayout
+                android:id="@+id/careTip1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
@@ -143,7 +117,7 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <!-- Card 3 -->
+            <!-- Card 2 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -157,7 +131,7 @@
                     android:layout_width="110dp"
                     android:layout_height="110dp"
                     android:layout_marginEnd="16dp"
-                    android:src="@drawable/caretip3" />
+                    android:src="@drawable/care_tip5" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -188,7 +162,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Ensure your pet has Proper Training and Socializing"
+                    android:text="Ensure your pet has Safe Playtime"
                     android:textColor="#000000"
                     android:textSize="20sp"
                     android:textStyle="bold" />
