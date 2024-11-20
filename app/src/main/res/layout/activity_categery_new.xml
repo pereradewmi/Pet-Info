@@ -201,6 +201,118 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
+    <!-- Third dog card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dogItemCard3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/dogItemCard2"
+        android:visibility="visible"
+        android:backgroundTint="#FFF1E4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/pugImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pugdog"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/pugText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Pug"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/pugImage"
+                app:layout_constraintTop_toTopOf="@id/pugImage" />
+
+            <Button
+                android:id="@+id/moreInfoButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#D8790D"
+                android:padding="8dp"
+                android:text="More Info"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@id/pugImage"
+                app:layout_constraintTop_toBottomOf="@id/pugText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Fourth dog card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dogItemCard4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/dogItemCard3"
+        android:visibility="visible"
+        android:backgroundTint="#FFF1E4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/beagleImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/beagle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/beagleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Beagle"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/beagleImage"
+                app:layout_constraintTop_toTopOf="@id/beagleImage" />
+
+            <Button
+                android:id="@+id/moreInfoButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#D8790D"
+                android:padding="8dp"
+                android:text="More Info"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@id/beagleImage"
+                app:layout_constraintTop_toBottomOf="@id/beagleText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Repeat the pattern for additional dog and cat cards -->
+
+    <!-- Replace the drawable and text values as needed -->
+
     <!-- cat section-->
     <!-- First cat card for Persian Cat -->
     <androidx.cardview.widget.CardView
@@ -257,7 +369,6 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
-    <!-- Second cat card for Siamese Cat -->
     <androidx.cardview.widget.CardView
         android:id="@+id/catItemCard2"
         android:layout_width="match_parent"
@@ -309,6 +420,60 @@
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toEndOf="@id/catImage2"
                 app:layout_constraintTop_toBottomOf="@id/catText2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/catItemCard3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/catItemCard2"
+        android:visibility="gone"
+        android:backgroundTint="#FFF1E4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/catItem3Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/catImage3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/siamese"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/catText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Siamese Cat"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/catImage3"
+                app:layout_constraintTop_toTopOf="@id/catImage3" />
+
+            <Button
+                android:id="@+id/moreInfoButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#D8790D"
+                android:padding="8dp"
+                android:text="More Info"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@id/catImage3"
+                app:layout_constraintTop_toBottomOf="@id/catText3" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 

@@ -7,6 +7,19 @@
     android:background="#FFFFFF"
     tools:context=".FNQ">
 
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_faq"
+        android:scaleType="centerCrop" />
+    <!-- White overlay with opacity -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:alpha="0.3" />
+
     <!-- FAQ Title -->
     <TextView
         android:id="@+id/faqTitle"
@@ -31,7 +44,7 @@
         android:layout_marginEnd="16dp"
         app:cardCornerRadius="12dp"
         app:cardElevation="4dp"
-        android:backgroundTint="#C17937"
+        android:backgroundTint="#FFD6B1"
         app:layout_constraintTop_toBottomOf="@id/faqTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -42,7 +55,6 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Question Text -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -53,40 +65,83 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Question 01"
+                    android:text="What should I do if my pet is injured or gets sick?"
                     android:textColor="#000000"
-                    android:textSize="18sp" />
+                    android:textSize="20sp" />
 
                 <ImageView
                     android:id="@+id/arrowIcon1"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/car_ui_recyclerview_ic_down" />
+                    android:src="@drawable/arrow_down_icon" />
             </LinearLayout>
 
-            <!-- Answer Text -->
             <TextView
                 android:id="@+id/answerText1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Answer to question 01"
+                android:layout_marginTop="20dp"
+                android:text="This is a good place to showcase your expertise in pet care. Explain that it’s always best to visit a veterinarian if your pet is sick or injured, but for minor issues, there are some DIY methods you can try first or to hold you over in the meantime."
                 android:textColor="#000000"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:visibility="gone" />
-
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <!-- Additional FAQ items... -->
-    <!-- Background illustration -->
-    <ImageView
-        android:id="@+id/faqBackgroundImage"
-        android:layout_width="wrap_content"
+    <!-- FAQ Item 2 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/faqItem2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/background_faq"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        android:backgroundTint="#FFD6B1"
+        app:layout_constraintTop_toBottomOf="@id/faqItem1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/questionText2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="What should I do about my overweight pet?"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/arrowIcon2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/arrow_down_icon" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/answerText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Sometimes, pets put on a little extra weight, just like people. The caveat, of course, is that just like people, overweight pets can suffer from a variety of health problems and debilitating conditions. Answer this question to encourage people to visit their vet, learn the proper dietary requirements for their pet, and start exercising them to get them back in shape sooner than later."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- FAQ Item 3 -->
+
 </androidx.constraintlayout.widget.ConstraintLayout>

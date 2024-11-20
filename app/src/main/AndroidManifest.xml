@@ -13,7 +13,13 @@
         android:theme="@style/Theme.PetInfo"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".CareTips"
+            android:exported="false" />
+        <activity
+            android:name=".FNQ"
+            android:exported="false" />
+        <activity
+            android:name=".NewCareTips"
             android:exported="false" />
         <activity
             android:name=".PetDeatails"
@@ -34,13 +40,13 @@
             android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".CategeryNew"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".Registration"
             android:exported="false" />
         <activity
-            android:name=".FNQ"
+            android:name=".CategeryNew"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

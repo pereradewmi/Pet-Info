@@ -6,10 +6,13 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+
+import com.google.api.Page;
 
 public class Home extends AppCompatActivity {
 
@@ -32,7 +35,7 @@ public class Home extends AppCompatActivity {
 
         // Slide-Up Animation for Frames
         View frameLayout1 = findViewById(R.id.frameLayout);
-        View frameLayout2 = findViewById(R.id.textView7);
+        View frameLayout2 = findViewById(R.id.txt_faq);
         Animation slideUpAnimation = AnimationUtils.loadAnimation(this, R.anim.slide_up);
         frameLayout1.startAnimation(slideUpAnimation);
         frameLayout2.startAnimation(slideUpAnimation);
@@ -54,5 +57,29 @@ public class Home extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        FrameLayout careTipsFrame = findViewById(R.id.frameLayout);
+        careTipsFrame.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(Home.this, NewCareTips.class);
+                startActivity(intent);
+            }
+        });
+
+        FrameLayout careTipsFrame2 = findViewById(R.id.frameLayout2);
+        careTipsFrame2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(Home.this, FNQ.class);
+                startActivity(intent);
+            }
+        });
+//        FrameLayout careTipsFrame = findViewById(R.id.frameLayout);
+//        careTipsFrame.setOnClickListener(view -> {
+//            @Override
+//            Intent intent = new Intent(Home.this, CareTips.class);
+//            startActivity(intent);
+//        });
     }
 }
