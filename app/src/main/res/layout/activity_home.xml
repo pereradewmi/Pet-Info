@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+<ScrollView
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:context=".Home">
+        android:layout_height="wrap_content">
 
         <!-- Your existing views inside ConstraintLayout -->
 
@@ -30,13 +35,15 @@
 
         <TextView
             android:id="@+id/textName"
-            android:layout_width="170dp"
-            android:layout_height="36dp"
-            android:layout_marginTop="40dp"
-            android:text="Dewmi Perera"
-            android:textSize="20sp"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Paw Pedicab"
+            android:textColor="#7B5D28 "
+            android:textSize="34sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toEndOf="@+id/userProfile"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -68,9 +75,9 @@
             android:id="@+id/textShareexperince"
             android:layout_width="225dp"
             android:layout_height="108dp"
-            android:layout_marginEnd="168dp"
+            android:layout_marginEnd="164dp"
             android:layout_marginBottom="44dp"
-            android:text="Share Your Experience With Us!"
+            android:text="Share Your Experience With Us !"
             android:textSize="28sp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -211,15 +218,14 @@
                 android:textSize="24sp" />
         </FrameLayout>
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="24dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/car_ui_icon_overflow_menu" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </ScrollView>
+    <!-- Bottom navigation bar -->
+    <include
+        android:id="@+id/bottom_nav_bar"
+        layout="@layout/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

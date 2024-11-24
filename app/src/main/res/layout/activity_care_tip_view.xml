@@ -23,8 +23,8 @@
             android:src="@drawable/dog_foods" />
 
         <LinearLayout
-            android:layout_width="411dp"
-            android:layout_height="315dp"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_background"
             android:orientation="vertical"
@@ -32,8 +32,8 @@
 
             <TextView
                 android:id="@+id/pet_diet_title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="350dp"
+                android:layout_height="110dp"
                 android:fontFamily="sans-serif"
                 android:gravity="center"
                 android:lineSpacingExtra="4dp"
@@ -43,8 +43,8 @@
             <!-- Text: Avoid Toxic Items -->
             <TextView
                 android:id="@+id/avoid_human_food"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="353dp"
+                android:layout_height="107dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="sans-serif"
                 android:gravity="center"
@@ -56,8 +56,8 @@
             <!-- Text: Provide Fresh Water -->
             <TextView
                 android:id="@+id/provide_clean_water"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="358dp"
+                android:layout_height="91dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="sans-serif"
                 android:gravity="center"
@@ -68,5 +68,12 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!-- Top Section: Image -->
+    <include
+        android:id="@+id/bottom_nav_bar"
+        layout="@layout/bottom_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
 </androidx.constraintlayout.widget.ConstraintLayout>
