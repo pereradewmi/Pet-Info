@@ -30,7 +30,7 @@ public class NewCareTips extends AppCompatActivity {
         layout.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(NewCareTips.this, SingleCareTip.class);
+                Intent intent = new Intent(NewCareTips.this, CareTipView.class);
                 startActivity(intent);
             }
         });
