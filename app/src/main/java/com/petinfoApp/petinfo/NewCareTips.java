@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.text.Layout;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,6 +33,20 @@ public class NewCareTips extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(NewCareTips.this, CareTipView.class);
+                startActivity(intent);
+            }
+        });
+
+        // Access the home_icon from the included layout (bottom_bar)
+        RelativeLayout bottomNavBar = findViewById(R.id.bottom_nav_bar); // The ID of the <include> tag
+        ImageView homeIcon = bottomNavBar.findViewById(R.id.home_icon);
+
+        // Set a click listener for the home icon
+        homeIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Navigate to the Home activity
+                Intent intent = new Intent(NewCareTips.this, Home.class); // Replace 'CurrentActivity' with the name of your activity
                 startActivity(intent);
             }
         });

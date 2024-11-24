@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,6 +35,21 @@ public class CategeryNew extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // Access the home_icon from the included layout (bottom_bar)
+        RelativeLayout bottomNavBar = findViewById(R.id.bottom_nav_bar); // The ID of the <include> tag
+        ImageView homeIcon = bottomNavBar.findViewById(R.id.home_icon);
+
+        // Set a click listener for the home icon
+        homeIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Navigate to the Home activity
+                Intent intent = new Intent(CategeryNew.this, Home.class); // Replace 'CurrentActivity' with the name of your activity
+                startActivity(intent);
+            }
+        });
+
 
         Button dogsButton = findViewById(R.id.dogsButton);
         Button catsButton = findViewById(R.id.catsButton);

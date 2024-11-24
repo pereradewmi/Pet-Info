@@ -1,8 +1,10 @@
 package com.petinfoApp.petinfo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -36,6 +38,20 @@ public class FNQ extends AppCompatActivity {
                     toggleAnswer(answerText, arrowIcon);
                 }
             });
+
+            // Access the home_icon from the included layout (bottom_bar)
+            RelativeLayout bottomNavBar = findViewById(R.id.bottom_nav_bar); // The ID of the <include> tag
+            ImageView homeIcon = bottomNavBar.findViewById(R.id.home_icon);
+
+            // Set a click listener for the home icon
+            homeIcon.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    // Navigate to the Home activity
+                    Intent intent = new Intent(FNQ.this, Home.class); // Replace 'CurrentActivity' with the name of your activity
+                    startActivity(intent);
+                }
+            });
         }
     }
 
@@ -43,6 +59,7 @@ public class FNQ extends AppCompatActivity {
     private void toggleAnswer(TextView answerText, ImageView arrowIcon) {
         if (answerText.getVisibility() == View.GONE) {
             answerText.setVisibility(View.VISIBLE);
+
             arrowIcon.setImageResource(R.drawable.arrow_up_icon); // Change icon to up arrow
         } else {
             answerText.setVisibility(View.GONE);
