@@ -1,35 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="wrap_content"-->
-<!--    android:background="#D9771E"-->
-<!--    android:id="@+id/main"-->
-<!--    android:layout_alignParentBottom="true">-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/home_icon"-->
-<!--        android:layout_width="40dp"-->
-<!--        android:layout_height="40dp"-->
-<!--        android:src="@drawable/home_white_icon"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:contentDescription=" "-->
-<!--        android:layout_margin="8dp" />-->
-<!--</RelativeLayout>-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#D9771E"
+    android:background="#7B5D28"
     android:id="@+id/main"
     android:layout_alignParentBottom="true">
 
+
+    <ImageView
+        android:id="@+id/setting_icon"
+        android:layout_width="53dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="Home Icon"
+        android:src="@drawable/setting_white_icon" />
+
+
     <ImageView
         android:id="@+id/home_icon"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="53dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="8dp"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="8dp"
-        android:contentDescription=" "
+        android:layout_marginEnd="84dp"
+        android:layout_toEndOf="@id/setting_icon"
+        android:contentDescription="Settings Icon"
         android:src="@drawable/home_white_icon" />
+
+
+    <ImageView
+        android:id="@+id/profile_icon"
+        android:layout_width="53dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="84dp"
+        android:layout_toEndOf="@id/home_icon"
+        android:contentDescription="Settings Icon"
+        android:src="@drawable/profile_white_icon" />
+
+    <ImageView
+        android:id="@+id/help_icon"
+        android:layout_width="53dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="338dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="84dp"
+        android:layout_toEndOf="@id/profile_icon"
+        android:contentDescription="Settings Icon"
+        android:src="@drawable/help_white_icon" />
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/profile_icon"-->
+<!--        android:layout_width="53dp"-->
+<!--        android:layout_height="39dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="2dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_toEndOf="@id/home_icon"-->
+<!--        android:contentDescription="Profile Icon"-->
+<!--        android:src="@drawable/profile_white_icon" />-->
+
+<!-- -->
+<!--    <ImageView-->
+<!--        android:id="@+id/help_icon"-->
+<!--        android:layout_width="61dp"-->
+<!--        android:layout_height="36dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_toEndOf="@id/home_icon"-->
+<!--        android:contentDescription="Help Icon"-->
+<!--        android:src="@drawable/help_white_icon" />-->
+
 </RelativeLayout>

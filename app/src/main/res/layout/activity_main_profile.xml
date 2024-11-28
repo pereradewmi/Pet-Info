@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    tools:context=".MainProfile">
+
+    <!-- Profile Title -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bgmain"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:alpha="0.3" />
+    <!-- My Account Card -->
+
+    <TextView
+        android:id="@+id/profileTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Account"
+        android:textColor="#333333"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myAccountCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileTitle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/myAccountIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/profile_icon"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/myAccountIcon"
+                android:layout_marginStart="16dp"
+                android:text="My Account"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Add Account Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addAccountCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myAccountCard">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/addAccountIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/add_icon"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/addAccountIcon"
+                android:layout_marginStart="16dp"
+                android:text="Add Account"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Two-Step Verification Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/twoStepVerificationCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addAccountCard">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/twoStepVerificationIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/verify_icon"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/twoStepVerificationIcon"
+                android:layout_marginStart="16dp"
+                android:text="Two-Step Verification"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Delete Account Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/deleteAccountCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/twoStepVerificationCard">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/deleteAccountIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/delete_icon"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/deleteAccountIcon"
+                android:layout_marginStart="16dp"
+                android:text="Delete Account"
+                android:textColor="#D32F2F"
+                android:textSize="18sp"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Logout Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/logoutCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deleteAccountCard">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/logoutIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/logout_icon"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/logoutIcon"
+                android:layout_marginStart="16dp"
+                android:text="Logout"
+                android:textColor="#520606"
+                android:textSize="18sp"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <!-- Accept Button -->
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#D9771E"
+        android:text="Back To Home"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,11 +2,8 @@ package com.petinfoApp.petinfo;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import androidx.activity.EdgeToEdge;
@@ -15,29 +12,19 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class NewCareTips extends AppCompatActivity {
+public class MainSetting extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_new_care_tips);
+        setContentView(R.layout.activity_main_setting);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        LinearLayout layout = findViewById(R.id.careTip1);
-        layout.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent intent = new Intent(NewCareTips.this, CareTipView.class);
-                startActivity(intent);
-            }
-        });
-
-        // Access the home_icon from the included layout (bottom_bar)
+// Access the home_icon from the included layout (bottom_bar)
         RelativeLayout bottomNavBar = findViewById(R.id.bottom_nav_bar); // The ID of the <include> tag
         ImageView homeIcon = bottomNavBar.findViewById(R.id.home_icon);
         ImageView profileIcon = bottomNavBar.findViewById(R.id.profile_icon);
@@ -49,7 +36,7 @@ public class NewCareTips extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to the Home activity
-                Intent intent = new Intent(NewCareTips.this, Home.class); // Replace 'CurrentActivity' with the name of your activity
+                Intent intent = new Intent(MainSetting.this, Home.class); // Replace 'CurrentActivity' with the name of your activity
                 startActivity(intent);
             }
         });
@@ -58,7 +45,7 @@ public class NewCareTips extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to the Home activity
-                Intent intent = new Intent(NewCareTips.this, MainProfile.class); // Replace 'CurrentActivity' with the name of your activity
+                Intent intent = new Intent(MainSetting.this, MainProfile.class); // Replace 'CurrentActivity' with the name of your activity
                 startActivity(intent);
             }
         });
@@ -67,7 +54,7 @@ public class NewCareTips extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to the Home activity
-                Intent intent = new Intent(NewCareTips.this, MainHelp.class); // Replace 'CurrentActivity' with the name of your activity
+                Intent intent = new Intent(MainSetting.this, MainHelp.class); // Replace 'CurrentActivity' with the name of your activity
                 startActivity(intent);
             }
         });
@@ -76,7 +63,7 @@ public class NewCareTips extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to the Home activity
-                Intent intent = new Intent(NewCareTips.this, MainSetting.class); // Replace 'CurrentActivity' with the name of your activity
+                Intent intent = new Intent(MainSetting.this, MainSetting.class); // Replace 'CurrentActivity' with the name of your activity
                 startActivity(intent);
             }
         });

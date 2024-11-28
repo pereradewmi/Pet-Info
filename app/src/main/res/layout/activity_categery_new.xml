@@ -8,29 +8,81 @@
     android:layout_height="match_parent"
     tools:context=".CategeryNew">
 
+
+<!--    <TextView-->
+<!--        android:id="@+id/titleTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="12dp"-->
+<!--        android:layout_marginTop="56dp"-->
+<!--        android:fontFamily="@font/adlam_display"-->
+<!--        android:text="Categories"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="30sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/textView2"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="1.0" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="404dp"-->
+<!--        android:layout_height="62dp"-->
+<!--        android:text="Pets are loyal companions that bring joy, comfort, and unconditional love into our lives."-->
+<!--        tools:layout_editor_absoluteX="8dp"-->
+<!--        tools:layout_editor_absoluteY="76dp" />-->
+
+    <!-- Title Text -->
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="56dp"
         android:fontFamily="@font/adlam_display"
         android:text="Categories"
         android:textColor="#000000"
         android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/descriptionTextView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
+    <!-- Description Text -->
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Discover more about your beloved pet! Whether you’re looking for care tips, interesting facts, or Helth facts"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Horizontal Scroll for Category Tabs -->
+
+<!--    <HorizontalScrollView-->
+<!--        android:id="@+id/horizontalScrollView"-->
+<!--        android:layout_width="385dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="2dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="2dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/titleTextView">-->
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
-        android:layout_width="385dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="2dp"
+        android:layout_width="398dp"
+        android:layout_height="65dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/titleTextView">
+        app:layout_constraintTop_toBottomOf="@id/descriptionTextView">
 
         <LinearLayout
             android:id="@+id/categoryTabs"
@@ -43,7 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#D8790D"
-                android:padding="8dp"
+                android:padding="10dp"
                 android:text="Dogs"
                 android:textColor="#000000" />
 
@@ -53,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:backgroundTint="#FFD3A7"
-                android:padding="8dp"
+                android:padding="10dp"
                 android:text="Cats"
                 android:textColor="#000000" />
 
@@ -63,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:backgroundTint="#FFD3A7"
-                android:padding="8dp"
+                android:padding="10dp"
                 android:text="Rabbits"
                 android:textColor="#000000" />
 
@@ -73,7 +125,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:backgroundTint="#FFD3A7"
-                android:padding="8dp"
+                android:padding="10dp"
                 android:text="Birds"
                 android:textColor="#000000" />
 
@@ -83,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:backgroundTint="#FFD3A7"
-                android:padding="8dp"
+                android:padding="10dp"
                 android:text="Fish"
                 android:textColor="#000000" />
         </LinearLayout>
@@ -116,7 +168,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/goldenretriever"
+                android:src="@drawable/germanshepherd"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -126,7 +178,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:fontFamily="sans-serif-medium"
-                android:text="Golden Retriever"
+                android:text="German Shepherd"
                 android:textColor="#000000"
                 android:textSize="18sp"
                 app:layout_constraintStart_toEndOf="@id/goldenRetrieverImage"
@@ -170,7 +222,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/germanshepherd"
+                android:src="@drawable/goldenretriever"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -180,7 +232,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:fontFamily="sans-serif-medium"
-                android:text="German Shepherd"
+                android:text="Golden Retriever"
                 android:textColor="#000000"
                 android:textSize="18sp"
                 app:layout_constraintStart_toEndOf="@id/germanShepherdImage"

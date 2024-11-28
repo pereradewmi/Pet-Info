@@ -142,7 +142,7 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <!-- FAQ Item 3 -->
+
     <include
         android:id="@+id/bottom_nav_bar"
         layout="@layout/bottom_bar"

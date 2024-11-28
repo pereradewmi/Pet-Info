@@ -8,6 +8,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -81,5 +82,49 @@ public class Home extends AppCompatActivity {
 //            Intent intent = new Intent(Home.this, CareTips.class);
 //            startActivity(intent);
 //        });
+
+        // Access the home_icon from the included layout (bottom_bar)
+        RelativeLayout bottomNavBar = findViewById(R.id.bottom_nav_bar); // The ID of the <include> tag
+        ImageView homeIcon = bottomNavBar.findViewById(R.id.home_icon);
+        ImageView profileIcon = bottomNavBar.findViewById(R.id.profile_icon);
+        ImageView helpIcon = bottomNavBar.findViewById(R.id.help_icon);
+        ImageView settingIcon = bottomNavBar.findViewById(R.id.setting_icon);
+
+        // Set a click listener for the home icon
+        homeIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Navigate to the Home activity
+                Intent intent = new Intent(Home.this, Home.class); // Replace 'CurrentActivity' with the name of your activity
+                startActivity(intent);
+            }
+        });
+
+        profileIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Navigate to the Home activity
+                Intent intent = new Intent(Home.this, MainProfile.class); // Replace 'CurrentActivity' with the name of your activity
+                startActivity(intent);
+            }
+        });
+
+        helpIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Navigate to the Home activity
+                Intent intent = new Intent(Home.this, MainHelp.class); // Replace 'CurrentActivity' with the name of your activity
+                startActivity(intent);
+            }
+        });
+
+        settingIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Navigate to the Home activity
+                Intent intent = new Intent(Home.this, MainSetting.class); // Replace 'CurrentActivity' with the name of your activity
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -1,5 +1,6 @@
 package com.petinfoApp.petinfo;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.RelativeLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.motion.widget.MotionLayout;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -28,6 +30,9 @@ public class Profile extends AppCompatActivity {
         // Access the home_icon from the included layout (bottom_bar)
         RelativeLayout bottomNavBar = findViewById(R.id.bottom_nav_bar); // The ID of the <include> tag
         ImageView homeIcon = bottomNavBar.findViewById(R.id.home_icon);
+        ImageView profileIcon = bottomNavBar.findViewById(R.id.profile_icon);
+        ImageView helpIcon = bottomNavBar.findViewById(R.id.help_icon);
+        ImageView settingIcon = bottomNavBar.findViewById(R.id.setting_icon);
 
         // Set a click listener for the home icon
         homeIcon.setOnClickListener(new View.OnClickListener() {
@@ -38,5 +43,49 @@ public class Profile extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        profileIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Navigate to the Home activity
+                Intent intent = new Intent(Profile.this, MainProfile.class); // Replace 'CurrentActivity' with the name of your activity
+                startActivity(intent);
+            }
+        });
+
+        helpIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Navigate to the Home activity
+                Intent intent = new Intent(Profile.this, MainHelp.class); // Replace 'CurrentActivity' with the name of your activity
+                startActivity(intent);
+            }
+        });
+
+        settingIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Navigate to the Home activity
+                Intent intent = new Intent(Profile.this, MainSetting.class); // Replace 'CurrentActivity' with the name of your activity
+                startActivity(intent);
+            }
+        });
+
+        homeIcon.setOnClickListener(view -> {
+            view.animate()
+                    .rotation(360f) // Rotate the icon
+                    .alpha(0.5f) // Dim the icon
+                    .setDuration(500) // Animation duration
+                    .withEndAction(() -> {
+                        Intent intent = new Intent(Profile.this, Home.class);
+                        startActivity(intent);
+                    })
+                    .start();
+        });
+
+        Intent intent = new Intent(Profile.this, Home.class);
+        Bundle options = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(intent, options);
+
     }
 }

@@ -38,5 +38,29 @@ public class BottomBar extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        ImageView img1 = findViewById(R.id.help_icon);
+        img1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(BottomBar.this, MainHelp.class);
+                startActivity(intent);
+            }
+        });
+        ImageView img2 = findViewById(R.id.setting_icon);
+        img2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(BottomBar.this, MainSetting.class);
+                startActivity(intent);
+            }
+        });
+        ImageView img3 = findViewById(R.id.profile_icon);
+        img3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(BottomBar.this, MainProfile.class);
+                startActivity(intent);
+            }
+        });
     }
 }
