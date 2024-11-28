@@ -1,6 +1,6 @@
 # Pet Care Mobile App
 
-# UI Design - Designed by Dewmi Perera
+### UI Design - Designed by Dewmi Perera
 https://www.figma.com/design/rUlJAtjyNdkCYGGJixVGgE/Pet-care-App?node-id=8-23&t=B0ohIjAV7y4Re749-1
 
 ## Project Overview
