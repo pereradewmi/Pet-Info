@@ -1,5 +1,8 @@
 # Pet Care Mobile App
 
+# UI Design - Designed by Dewmi Perera
+https://www.figma.com/design/rUlJAtjyNdkCYGGJixVGgE/Pet-care-App?node-id=8-23&t=B0ohIjAV7y4Re749-1
+
 ## Project Overview
 
 This **Pet Care Mobile App** is designed to help users identify different pets and provide useful information on how to care for them. It serves as a comprehensive guide for pet owners, offering detailed insights about various animals, their characteristics, and care routines. Whether you're a first-time pet owner or an experienced one, this app will assist you in understanding and meeting your pet's needs.
