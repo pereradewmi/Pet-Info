@@ -57,7 +57,7 @@
             android:id="@+id/editUsercnum"
             android:layout_width="match_parent"
             android:layout_height="61dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:inputType="number"
@@ -68,18 +68,18 @@
             android:id="@+id/editUseremail"
             android:layout_width="match_parent"
             android:layout_height="61dp"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
-            android:inputType="textEmailAddress"
             android:hint="Email"
+            android:inputType="textEmailAddress"
             android:textSize="20sp" />
 
         <EditText
             android:id="@+id/editPassword"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:inputType="textPassword"
@@ -89,9 +89,9 @@
         <CheckBox
             android:id="@+id/checkBTnC"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_height="wrap_content"
             android:text="I Agree to the Terms and Conditions" />
 
         <Button

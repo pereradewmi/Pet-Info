@@ -21,8 +21,8 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/userProfile"
-            android:layout_width="61dp"
-            android:layout_height="55dp"
+            android:layout_width="57dp"
+            android:layout_height="54dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="24dp"
             android:layout_marginRight="90dp"
@@ -35,29 +35,28 @@
 
         <TextView
             android:id="@+id/textName"
-            android:layout_width="260dp"
-            android:layout_height="40dp"
+            android:layout_width="205dp"
+            android:layout_height="43dp"
             android:layout_marginTop="28dp"
             android:fontFamily="@font/adlam_display"
             android:text="Paw Pedicab"
             android:textColor="#7B5D28 "
             android:textSize="34sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintHorizontal_bias="0.86"
             app:layout_constraintStart_toEndOf="@+id/userProfile"
             app:layout_constraintTop_toTopOf="parent" />
 
         <SearchView
             android:id="@+id/searchView"
-            android:layout_width="363dp"
-            android:layout_height="54dp"
-            android:layout_marginTop="36dp"
+            android:layout_width="386dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="24dp"
             android:background="@drawable/rounded_search_view"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.437"
+            app:layout_constraintHorizontal_bias="0.56"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textName">
-        </SearchView>
+            app:layout_constraintTop_toBottomOf="@+id/textName"></SearchView>
 
         <ImageView
             android:id="@+id/imageView"
@@ -99,11 +98,11 @@
             android:layout_width="388dp"
             android:layout_height="94dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="444dp"
+            android:layout_marginTop="428dp"
             android:layout_marginRight="30dp"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintHorizontal_bias="0.608"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 

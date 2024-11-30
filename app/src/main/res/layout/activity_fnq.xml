@@ -14,34 +14,38 @@
         android:src="@drawable/background_faq"
         android:scaleType="centerCrop" />
     <!-- White overlay with opacity -->
+
+    <!-- FAQ Title -->
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:alpha="0.3"
         android:background="@android:color/white"
-        android:alpha="0.3" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="24dp" />
 
-    <!-- FAQ Title -->
+    <!-- FAQ Item 1 -->
+
     <TextView
         android:id="@+id/faqTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginStart="16dp"
-        android:text="FAQ"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:text="Frequently Asked Questions"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- FAQ Item 1 -->
     <androidx.cardview.widget.CardView
         android:id="@+id/faqItem1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         app:cardCornerRadius="12dp"
         app:cardElevation="4dp"
         android:backgroundTint="#FFD6B1"
@@ -94,8 +98,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         app:cardCornerRadius="12dp"
         app:cardElevation="4dp"
         android:backgroundTint="#FFD6B1"

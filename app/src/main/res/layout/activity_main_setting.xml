@@ -12,7 +12,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/settingbg"
+        android:src="@drawable/bgmain"
         android:scaleType="centerCrop" />
 
     <!-- Background Overlay for opacity -->
@@ -25,12 +25,13 @@
     <!-- Title Text -->
 
     <!-- Account Settings Section -->
+
     <TextView
         android:id="@+id/settings_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="16dp"
         android:gravity="center"
         android:text="Settings"
@@ -49,6 +50,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        app:cardCornerRadius="12dp"
         android:backgroundTint="#F2B572"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,6 +88,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        app:cardCornerRadius="12dp"
         android:backgroundTint="#FAB08D"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -121,6 +124,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:layout_marginStart="16dp"
+        app:cardCornerRadius="12dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#F6BD8B"
         app:layout_constraintStart_toStartOf="parent"
@@ -157,6 +161,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:layout_marginStart="16dp"
+        app:cardCornerRadius="12dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#FAD0B0"
         app:layout_constraintStart_toStartOf="parent"

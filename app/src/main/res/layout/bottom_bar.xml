@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#7B5D28"
+    android:layout_marginTop="20dp"
     android:id="@+id/main"
     android:layout_alignParentBottom="true">
 
@@ -62,29 +63,5 @@
         android:layout_toEndOf="@id/profile_icon"
         android:contentDescription="Settings Icon"
         android:src="@drawable/help_white_icon" />
-
-    <!--    <ImageView-->
-<!--        android:id="@+id/profile_icon"-->
-<!--        android:layout_width="53dp"-->
-<!--        android:layout_height="39dp"-->
-<!--        android:layout_alignParentTop="true"-->
-<!--        android:layout_marginStart="2dp"-->
-<!--        android:layout_marginTop="8dp"-->
-<!--        android:layout_toEndOf="@id/home_icon"-->
-<!--        android:contentDescription="Profile Icon"-->
-<!--        android:src="@drawable/profile_white_icon" />-->
-
-<!-- -->
-<!--    <ImageView-->
-<!--        android:id="@+id/help_icon"-->
-<!--        android:layout_width="61dp"-->
-<!--        android:layout_height="36dp"-->
-<!--        android:layout_alignParentTop="true"-->
-<!--        android:layout_alignParentEnd="true"-->
-<!--        android:layout_marginTop="8dp"-->
-<!--        android:layout_marginEnd="8dp"-->
-<!--        android:layout_toEndOf="@id/home_icon"-->
-<!--        android:contentDescription="Help Icon"-->
-<!--        android:src="@drawable/help_white_icon" />-->
 
 </RelativeLayout>

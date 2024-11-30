@@ -50,7 +50,7 @@
             android:id="@+id/Cview2"
             android:layout_width="338dp"
             android:layout_height="162dp"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="30dp"
             android:src="@drawable/imglogin" />
 
         <EditText
@@ -68,11 +68,11 @@
             android:id="@+id/editPassword"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginTop="25dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
             android:layout_marginRight="20dp"
-            android:inputType="textPassword"
             android:hint="Password"
+            android:inputType="textPassword"
             android:textSize="20sp" />
 
         <Button
