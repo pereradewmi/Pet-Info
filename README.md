@@ -35,10 +35,3 @@ This **Pet Care Mobile App** is designed to help users identify different pets a
 1. Clone the repository:
    ```bash
    git clone https://github.com/pereradewmi/Pet-Info.git
-## Preview
-![Screenshot_20241130_045954](https://github.com/user-attachments/assets/092633fa-6acc-4091-8fe9-e0c2ac04d0c1)
-![Screenshot_20241130_050010](https://github.com/user-attachments/assets/006df1b3-0205-48ed-8843-96e926da364c)
-![Screenshot_20241130_050057](https://github.com/user-attachments/assets/320badcd-e0da-4708-9bc6-ae26faa74260)
-![Screenshot_20241130_050212](https://github.com/user-attachments/assets/8e6e38d4-f1ac-436a-b923-d08df40fe097)
-![Screenshot_20241130_050448](https://github.com/user-attachments/assets/9c1cf34e-8c15-4a6c-bd45-dd9786198197)
-
